@@ -1,0 +1,120 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: teal;
+    background: url("background.jpg");
+}
+#msgBox{
+    width: 100%;
+    height: 90vh;
+    overflow-y: scroll;
+}
+input{
+    width: 90vw;
+    height: 5vh;
+    padding: 0px 10px;
+    margin: 10px 0 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input:focus{
+    border-color: #719ECE;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+
+}
+button{
+    height: 5vh;
+    width: 5vw;
+}
+li{
+    background-color: wheat;
+    margin: 5px 4px;
+    /* width: fit-content; */
+    font-size: 30px;
+    padding: 0px 5px;
+    list-style-type: none;
+}
+#user{
+    background-color: greenyellow;
+    text-align: right;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: right;
+    /* width: fit-content; */
+    /* display: inline-block; */
+    position: static;
+    right: 1.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    height: 6vh;
+    position: absolute;
+    margin: 7px 10px;
+}
+#user2{
+    width: fit-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    li{      
+    background-color: wheat;
+    margin: 5px 4px;
+    /* width: fit-content; */
+    font-size: 30px;
+    padding: 0px 5px;
+    }
+    input{
+        width: 75vw;
+        height: 5vh;
+        padding: 0px 10px;
+        margin: 10px 0 10px 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    #msgBox{
+        width: 100%;
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    #user{
+        /* display: inline-block; */
+        position: static;
+        right: 1%;
+        text-align: right;
+    }
+    img{
+        height: 6vh;
+        position: absolute;
+        margin: 7px 5px;
+    }
+    body{
+        background-size: cover;
+    }
+    #user2{
+        margin-top: 30px;
+    }
+}
