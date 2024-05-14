@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <ul id="msgBox"></ul>
+<body onload="checkuser()">
+<!-- Form -->
+<div id="form-container">
+<h1 class="title">Sign in</h1>
+        <div class="label">Username</div>
+        <input type="text" id="Username">
+        <div class="label">Password</div>
+        <input type="password" id="password">
+        <input type="button" class="submit" value="Sign in" onclick="navigate()"/>
+        <div class="label msg">◆ You don't have an account? <a href="#">Sign up</a></div>
+</div>
 
-    <div class="row-bottom">
-
-        <input type="text" placeholder="Type Something...">
-        <img src="icons8-send-button-30.png" onclick="handleSend()"></img>
-    </div>
 
 
 

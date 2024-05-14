@@ -50,3 +50,60 @@ message.addEventListener("keyup", (e) => {
         handleSend()
     }
 })
+
+
+
+function checkuser(){
+    let useracsess = localStorage.getItem("Username")
+    let userpass = localStorage.getItem("password")
+    // if (useracsess !== null && userpass !== null){
+    //     window.location.pathname = "chatpage.html"
+    // }else{
+    //     if (useracsess === null && userpass === null){
+    //     // window.location.pathname = "index.html"
+    // }
+    // }
+    for (let i = 0; i < useracsess.length; i++) {
+        if (useracsess !== null && userpass !== null){
+            window.location.pathname = "chatpage.html"
+        }else if (useracsess === null && userpass === null){
+            window.location.pathname = "index.html"
+        }
+    }
+}
+
+function navigate(){
+    let username = document.getElementById("Username")
+    let password = document.getElementById("password")
+    if(username.value !== "" && password.value !== ""){
+        localStorage.setItem("Username", username.value);
+        localStorage.setItem("password", password.value);
+        window.location.pathname = "chatpage.html";
+        alert("Login Successful");
+    }else{
+        alert("Please enter your email and password");
+    }}
+
+function logoutuser(){
+    localStorage.removeItem("Username")
+    localStorage.removeItem("password")
+    window.location.pathname = "index.html"
+    alert("Logout Successful")
+}
+console.log(localStorage.getItem("Username"));
+console.log(localStorage.getItem("password"));
+
+var input = document.getElementById("Username");
+var input2 = document.getElementById("password");
+
+input.addEventListener("keyup", (e)=> {
+  if (e.keyCode === 13) {
+   navigate()
+  }
+});
+input2.addEventListener("keyup", (e)=> {
+  if (e.keyCode === 13) {
+   navigate()
+  }
+});
+
